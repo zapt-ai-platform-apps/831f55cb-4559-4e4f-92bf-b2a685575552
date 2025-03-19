@@ -1,25 +1,34 @@
 {
-    "name": "reactjs-vite-tailwind-vercel",
+    "name": "mind-mapper",
     "version": "1.0.0",
-    "description": "ReactJS app with Vite, Tailwind",
+    "description": "Advanced Mind Mapping App",
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
+        "build": "vitest run && vite build",
         "serve": "vite preview",
-        "start": "vite --host"
+        "start": "vite --host",
+        "test": "vitest"
     },
     "dependencies": {
         "@sentry/browser": "^8.41.0",
+        "@zapt/zapt-js": "^1.0.21",
+        "html-to-image": "^1.11.11",
+        "nanoid": "^5.0.3",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-colorful": "^5.6.1",
+        "react-dom": "^18.2.0",
+        "react-icons": "^4.12.0",
+        "reactflow": "^11.10.1",
+        "zustand": "^4.4.1"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.3.4",
+        "@sentry/vite-plugin": "^2.23.0",
         "autoprefixer": "^10.4.20",
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.4.7",
-        "@sentry/vite-plugin": "^2.23.0"
+        "vitest": "^0.34.6"
     }
 }

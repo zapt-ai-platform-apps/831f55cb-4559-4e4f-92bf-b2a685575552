@@ -1,3 +1,76 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+.react-flow__node {
+  @apply shadow-md;
+}
+
+.react-flow__node-custom {
+  @apply overflow-hidden;
+}
+
+.react-flow__edge-path {
+  @apply stroke-2;
+}
+
+.react-flow__controls-button {
+  @apply bg-white border-gray-300;
+}
+
+.react-flow__attribution {
+  @apply hidden;
+}
+
+.react-flow__background {
+  @apply bg-gray-50;
+}
+
+.node-resizer-handle {
+  @apply border-2 rounded-full bg-white border-blue-500 w-3 h-3 absolute;
+}
+
+/* Handle positions */
+.node-resizer-handle-top {
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.node-resizer-handle-bottom {
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.node-resizer-handle-left {
+  left: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.node-resizer-handle-right {
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.tooltip {
+  @apply invisible absolute bg-gray-800 text-white text-xs rounded py-1 px-2 -mt-8 left-1/2 transform -translate-x-1/2 z-50 opacity-0 transition-opacity;
+}
+
+.tooltip-container:hover .tooltip {
+  @apply visible opacity-100;
+}
+
+.made-on-zapt {
+  @apply fixed bottom-2 left-2 z-40 text-xs text-gray-500 bg-white/80 rounded px-2 py-1 shadow;
+}
+
+.made-on-zapt:hover {
+  @apply text-blue-600;
+}
