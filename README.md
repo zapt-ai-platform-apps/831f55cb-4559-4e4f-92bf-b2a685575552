@@ -1,41 +1,40 @@
-# Mind Mapper
+# MindFlow - Advanced Mind Mapping Tool
 
-An advanced mind mapping application for visualizing ideas and concepts.
+MindFlow is a feature-packed mind mapping application with PDF integration capabilities. It allows users to create, edit, and organize mind maps, as well as extract content from PDF documents and convert them into structured mind maps.
 
 ## Features
 
-- Create nodes to represent ideas and concepts
-- Connect nodes to show relationships
-- Style nodes with custom colors and sizes
-- Save and load mind maps
-- Export mind maps as images or JSON files
-- Import mind maps from JSON files
-- Undo/redo functionality
-- Auto-layout feature
+- **Intuitive Mind Map Editor**: Create and edit nodes with an easy-to-use interface
+- **PDF Integration**: Upload and view PDF documents
+- **PDF to Mind Map Conversion**: Automatically convert PDF content to a structured mind map
+- **Rich Node Styling**: Different node types and styles for visual organization
+- **Export/Import**: Save your mind maps as JSON or images
+- **Local Storage**: Automatically saves your work
+- **Responsive Design**: Works on all device sizes
 
-## Usage
+## Getting Started
 
-To start creating your mind map:
-
-1. Click the "Add Node" button to create a new node
-2. Double-click on a node to edit its text
-3. Drag from one node to another to create connections
-4. Select a node to edit its properties in the sidebar
-5. Use the toolbar to perform various actions (save, export, auto-layout)
+1. **Create a New Mind Map**: Start with a blank canvas
+2. **Add Nodes**: Right-click on the canvas or use the toolbar
+3. **Connect Nodes**: Drag from one node's handle to another
+4. **Import PDF**: Use the sidebar to upload and view PDFs
+5. **Convert PDF**: Transform PDF content into a structured mind map
+6. **Save Your Work**: Export your mind map or save it to local storage
 
 ## Development
 
 ### Prerequisites
 
-- Node.js (v16+)
+- Node.js (v14+)
+- npm or yarn
 
-### Setup
+### Installation
 
 ```bash
 # Install dependencies
 npm install
 
-# Run development server
+# Start development server
 npm run dev
 
 # Build for production
@@ -44,8 +43,9 @@ npm run build
 
 ## Technologies Used
 
-- React.js
-- React Flow
-- Zustand
+- React
 - Tailwind CSS
-- HTML-to-Image
+- PDF.js for PDF processing
+- React Flow for mind map visualization
+- React PDF for PDF viewing
+- HTML-to-Image for exporting mind maps as images

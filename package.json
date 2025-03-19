@@ -1,11 +1,11 @@
 {
-    "name": "mind-mapper",
+    "name": "mindflow-app",
     "version": "1.0.0",
-    "description": "Advanced Mind Mapping App",
+    "description": "Advanced Mind Mapping Tool with PDF Integration",
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "vitest run && vite build",
+        "build": "vite build",
         "serve": "vite preview",
         "start": "vite --host",
         "test": "vitest"
@@ -13,14 +13,15 @@
     "dependencies": {
         "@sentry/browser": "^8.41.0",
         "@zapt/zapt-js": "^1.0.21",
+        "file-saver": "^2.0.5",
         "html-to-image": "^1.11.11",
-        "nanoid": "^5.0.3",
+        "pdfjs-dist": "^4.0.269",
         "react": "^18.2.0",
-        "react-colorful": "^5.6.1",
         "react-dom": "^18.2.0",
         "react-icons": "^4.12.0",
+        "react-pdf": "^7.5.1",
         "reactflow": "^11.10.1",
-        "zustand": "^4.4.1"
+        "uuid": "^9.0.1"
     },
     "devDependencies": {
         "@vitejs/plugin-react": "^4.3.4",
@@ -29,6 +30,6 @@
         "postcss": "^8.4.47",
         "tailwindcss": "^3.4.13",
         "vite": "^5.4.7",
-        "vitest": "^0.34.6"
+        "vitest": "^1.2.1"
     }
 }
